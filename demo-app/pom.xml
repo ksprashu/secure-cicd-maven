@@ -146,9 +146,9 @@
       <extension>
         <groupId>com.google.cloud.artifactregistry</groupId>
         <artifactId>artifactregistry-maven-wagon</artifactId>
-        <version>2.1.0</version>
+        <version>2.1.5</version>
       </extension>
-    </extensions>    
+    </extensions>   
   </build>
 
   <!--  Spring profiles-->
@@ -205,6 +205,18 @@
 
   <repositories>
     <repository>
+      <id>central</id>
+      <name>Maven Central remote repository</name>
+      <url>artifactregistry://us-central1-maven.pkg.dev/next-sds-demo/remote-maven</url>
+      <layout>default</layout>
+      <releases>
+        <enabled>true</enabled>
+      </releases>
+      <snapshots>
+        <enabled>true</enabled>
+      </snapshots>
+    </repository>  
+    <repository>
       <id>artifact-registry</id>
       <url>artifactregistry://us-central1-maven.pkg.dev/next-sds-demo/remote-maven</url>
       <releases>
@@ -215,7 +227,7 @@
       </snapshots>
     </repository>
   </repositories>
-  
+
   <distributionManagement>
     <snapshotRepository>
       <id>artifact-registry</id>
