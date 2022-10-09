@@ -96,6 +96,11 @@
       <groupId>com.google.cloud</groupId>
       <artifactId>spring-cloud-gcp-starter</artifactId>
     </dependency>    
+    <dependency>
+      <groupId>com.google.protobuf</groupId>
+      <artifactId>protobuf-java</artifactId>
+      <version>3.19.6</version>
+    </dependency>
     <!--  Database sependencies-->
     <dependency>
       <groupId>com.h2database</groupId>
