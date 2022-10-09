@@ -100,8 +100,8 @@
       <groupId>com.google.protobuf</groupId>
       <artifactId>protobuf-java</artifactId>
       <version>3.19.6</version>
-    </dependency>    
-    <!--  Database sependencies-->
+    </dependency>
+    <!--  Database dependencies-->
     <dependency>
       <groupId>com.h2database</groupId>
       <artifactId>h2</artifactId>
